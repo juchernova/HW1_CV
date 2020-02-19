@@ -1,0 +1,57 @@
+body {
+  font-family: 'Merriweather', serif;
+}
+.flex-container {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+}
+.personal-info {
+  clear: both;
+  display: table;
+}
+.image-wrapper {
+  float: left;
+  width: 40%;
+}
+.image-wrapper img {
+  width: 200px;
+}
+.name {
+  float: right;
+  width: 40%;
+}
+.name p {
+  font-size: 20px;
+}
+.name a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.name a:hover {
+  color: rgb(112, 112, 179);
+}
+.about-me {
+  margin-top: 30px;
+}
+.skill input {
+  border: 1px solid black;
+}
+.skill button {
+  border: 1px solid black;
+}
+
+.sociability {
+  margin-top: 15px;
+}
+.criteria-list ul{
+  list-style-type: none;
+}
+.criteria-list li {
+  float: left;
+  margin-left: 5px;
+}
+.education-table {
+  margin-top: 70px;
+}
