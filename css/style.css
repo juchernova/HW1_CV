@@ -1,26 +1,30 @@
 body {
   font-family: 'Merriweather', serif;
+
 }
 .flex-container {
  display: flex;
  width: 100%;
  justify-content: center;
 }
-.personal-info {
-  clear: both;
-  display: table;
+.flex-content {
+  padding-left: 10px;
+  background: url(https://image.freepik.com/free-vector/low-poly-triangular-background_51530-41.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.personal-info{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .image-wrapper {
-  float: left;
-  width: 40%;
+  width: 30%;
 }
 .image-wrapper img {
   width: 200px;
 }
-.name {
-  float: right;
-  width: 40%;
-}
+
 .name p {
   font-size: 20px;
 }
@@ -38,20 +42,63 @@ body {
 .skill input {
   border: 1px solid black;
 }
+.skill input:focus {
+  outline: none;
+}
 .skill button {
   border: 1px solid black;
+  cursor: pointer;
 }
-
+.skill button:focus {
+  outline: none;
+}
 .sociability {
   margin-top: 15px;
 }
-.criteria-list ul{
-  list-style-type: none;
+.skill select {
+  cursor: pointer;
 }
-.criteria-list li {
-  float: left;
+.skill select:focus {
+  outline: none;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+}
+.list-item {
+  margin-right: 20px;
   margin-left: 5px;
 }
-.education-table {
-  margin-top: 70px;
+.criteria-list label {
+  cursor: pointer;
 }
+.criteria-list input[type=checkbox] {
+  display: none;
+}
+.criteria-list span::before {
+  content: '';
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 2px 13px;
+  position: relative;
+  top: 0;
+  left: -8px;
+}
+.criteria-list input[type=checkbox]:checked + span::before {
+  display: inline-block;
+  content: '\f058';
+  width: 3px;
+  color: rgb(235, 100, 100);
+  border: none;
+  font-family: Font Awesome\ 5 Free;
+  font-weight:900;
+  font-size: 16px;
+}
+.education-table {
+  margin-top: 40px;
+}
+
+
+
